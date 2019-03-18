@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Cafe Vendo [Rocky Villafranca]</title>
+		</head>
+		<body>
+			<center>
+				<h1>M O N E Y  H E R E</h1>
+				<h1>↓ ↓ ↓ ↓ ↓ ↓ ↓</h1>
+				<input type="text" name="" id="Coffee">
+			
+				<p>350ML = 25.00</p><input type="button" value="○" onclick="variation1()">
+				<p>450ML = 30.00</p><input type="button" value="◘" onclick="variation2()">
+				<p>750ML = 50.00</p><input type="button" value="•" onclick="variation3()">
+				<br><br><br><br>
+				<h1 id="result"></h1>
+				<h1 id="result1"></h1>		
+			</center>
+		</body>
+		<script type="text/javascript">
+			function variation3()
+			{
+				var variant3 = Number(document.getElementById("Coffee").value);
+				var dummy3;
+				if (isNaN(variant3))
+				{
+					alert("Invalid")
+				}
+				else
+				{
+					if (variant3 > 49)
+						dummy3 = variant3 - 50
+					{
+						document.getElementById("result").innerHTML = "ENJOY YOUR COFFEE! YOUR CHANGE IS";
+						document.getElementById("result1").innerHTML = dummy3;
+					}
+				}
+			}
+			function variation2()
+			{
+				var variant2 = Number(document.getElementById("Coffee").value);
+				var dummy2;
+				if (isNaN(variant2))
+				{
+					alert("Invalid")
+				}
+				else
+				{
+					if (variant2 > 29)
+						dummy2 = variant2 - 30
+					{
+						document.getElementById("result").innerHTML = "ENJOY YOUR COFFEE! YOUR CHANGE IS";
+						document.getElementById("result1").innerHTML = dummy2;
+					}
+				}
+			}
+			function variation1()
+			{
+				var variant1 = Number(document.getElementById("Coffee").value);
+				var dummy;
+				if (isNaN(variant1))
+				{
+					alert("Invalid")
+				}
+				else
+				{
+					if (variant1 > 24)
+						dummy = variant1 - 25
+					{
+						document.getElementById("result").innerHTML = "ENJOY YOUR COFFEE! YOUR CHANGE IS";
+						document.getElementById("result1").innerHTML = dummy;
+					}
+				}
+			}
+		</script>
+	</html>
