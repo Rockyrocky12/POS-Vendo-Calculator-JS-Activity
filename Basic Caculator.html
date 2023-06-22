@@ -48,14 +48,12 @@
 					value2 = Number(value2);
 					var total = (value1+value2);
 					document.getElementById('answer').innerHTML=total;
-					if(isNaN(Value1)==true || isNaN(value2)==true)
-					{
-					alert("Invalid Value")
+					if (isNaN(value1) || isNaN(value2)) {
+					alert("Invalid Value");
+					} else {
+					document.getElementById('answer').innerHTML = total;
 					}
-					else
-					{
-					document.getElementById('answer').innerHTML="Invalid value"	
-				    }			
+
 				}
 				function Subtract()
 				{
@@ -65,14 +63,11 @@
 					value2 =Number(value2);
 					var total =(value1-value2);
 					document.getElementById('answer').innerHTML=total;
-					if(isNaN(Value1)==true || isNaN(value2)==true)
-					{
-					alert("Invalid Value")
+					if (isNaN(value1) || isNaN(value2)) {
+					alert("Invalid Value");
+					} else {
+					document.getElementById('answer').innerHTML = total;
 					}
-					else
-					{
-					document.getElementById('answer').innerHTML="Invalid value"	
-				    }
 				}
 				function Multiply()
 				{
@@ -82,14 +77,11 @@
 					value2 =Number(value2);
 					var total =(value1*value2);
 					document.getElementById('answer').innerHTML=total;
-					if(isNaN(Value1)==true || isNaN(value2)==true)
-					{
-					alert("Invalid Value")
+					if (isNaN(value1) || isNaN(value2)) {
+					alert("Invalid Value");
+					} else {
+					document.getElementById('answer').innerHTML = total;
 					}
-					else
-					{
-					document.getElementById('answer').innerHTML="Invalid value"	
-				    }
 				}
 				function Divide()
 				{
@@ -98,15 +90,11 @@
 					value1 =Number(value1);
 					value2 =Number(value2);
 					var total =(value1/value2);
-					document.getElementById('answer').innerHTML=total;
-					if(isNaN(Value1)==true || isNaN(value2)==true)
-					{
-					alert("Invalid Value")
+					if (isNaN(value1) || isNaN(value2)) {
+					alert("Invalid Value");
+					} else {
+					document.getElementById('answer').innerHTML = total;
 					}
-					else
-					{
-					document.getElementById('answer').innerHTML="Invalid value"	
-				    }
 				}
 				function myFunction() {
 				    var txt;
